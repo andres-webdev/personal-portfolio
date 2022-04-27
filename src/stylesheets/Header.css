@@ -1,0 +1,114 @@
+@import url('../index.css');
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: .4s;
+}
+
+.nav{
+  height: var(--header-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav-logo{
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+
+.nav-logo:hover{
+  color: var(--first-color-alt);
+}
+
+.nav-menu{
+  margin-left: -2rem;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link{
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  padding: .6rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link:hover{
+  color: var(--link-color-hover);
+}
+
+.nav-link-name{
+  font-size: var(--tiny-font-size);
+  padding-top: .2rem;
+}
+
+.change-theme{
+  font-size: var(--h3-font-size);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
+
+.change-theme-hide{
+  display: none;
+}
+
+.active-link{
+  font-size: 1.9rem;
+  background: none; 
+  border-bottom: solid 3px var(--text-color);
+  border-radius: 0;
+}
+
+/*----- Movil and Tablets ------*/
+
+@media screen and (max-width: 500px){
+  .nav-menu{
+    position: fixed;
+    bottom: .001rem;
+    background-color: var(--first-color);
+    width: 100%;
+    border-radius: 2.5rem 2.5rem 0 0;
+    padding: 1rem 1.25rem;
+    transition: .5s;
+  }
+
+  .nav-link{
+    color: var(--body-color);
+    font-size: 1.75rem;
+    border-radius: 1rem;
+    margin-right: 0;
+  }
+
+  .nav-link-name{
+    display: none;
+  }
+
+  .active-link{
+    border-bottom: solid 3px var(--body-color);
+    border-radius: 0;
+  }
+}
+
+
