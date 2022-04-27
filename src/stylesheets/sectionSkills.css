@@ -1,0 +1,85 @@
+@import url('../index.css');
+
+.skills-container{
+    row-gap: 2rem;
+    padding-top: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-content{
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+}
+
+.skills-title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills-group{
+    display: grid;
+    align-content: initial;
+    row-gap: 1rem;
+}
+
+.skills-data{
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+}
+
+.skills-icons{
+    font-size: 2rem;
+}
+
+.skills-block2{
+    margin-left: .3rem;
+    width: 7rem;
+}
+
+.skills-name{
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills-level{
+    font-size: var(--tiny-font-size);
+    text-align: center;
+}
+
+.skills-bs-check{
+    margin-left: .1rem;
+}
+
+.bxs{
+    font-size: 1.2rem;
+    color: var(--first-color);
+    margin-right: .4rem;
+}
+
+.skills-data2{
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----- Media Movil -------*/
+
+@media screen and (max-width: 500px){
+    .skills-container{
+        row-gap: 2rem;
+        padding-top: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
