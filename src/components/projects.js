@@ -30,7 +30,7 @@ const projects = [
     {
         id: 4,
         title: 'Tasks',
-        img: 'img/clock.jpg',
+        img: 'img/tasks.jpg',
         alt: 'tasks',
         link: 'https://andres-webdev.github.io/tasks/',
         category: 'movil' 
@@ -38,7 +38,7 @@ const projects = [
     {
         id: 5,
         title: 'Calculator',
-        img: 'img/tasks.jpg',
+        img: 'img/search.jpg',
         alt: 'calculator',
         link: 'https://andres-webdev.github.io/calculator/',
         category: 'web' 
@@ -46,7 +46,7 @@ const projects = [
     {
         id: 6,
         title: 'Counter Words',
-        img: 'img/search.jpg',
+        img: 'img/clock.jpg',
         alt: 'words',
         link: 'https://andres-webdev.github.io/words-counter/',
         category: 'movil' 
