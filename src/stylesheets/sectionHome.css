@@ -1,0 +1,94 @@
+@import url(../index.css);
+
+.home-container{
+    position: relative;
+    row-gap: 2.5rem;
+    padding-top: 2rem;
+}
+
+.home-data{
+    text-align: center;
+}
+
+.home-greeting,
+.home-education{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.home-greeting{
+    display: block;
+    color: var(--tittle-color);
+    margin-bottom: .25rem;
+}
+
+.home-education{
+    color: var(--text-color);
+    margin-bottom: 1.6rem;
+}
+
+.home-name{
+    font-size: var(--biggest-font-size);
+}
+
+.home-social{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.home-social-link{
+    color: var(--first-color);
+    padding: .25rem;
+    display: flex;
+    font-size: 2.7rem;
+    transition: .3s;
+}
+
+.home-social-link:hover{
+    color: var(--link-color-hover);
+}
+
+.home-handle{
+    justify-self: center;
+    width: 200px;
+    height: 270px;
+    background: linear-gradient(190deg,
+                hsla(var(--first-hue), var(--sat), var(--lig), .3),
+                hsla(var(--first-hue), var(--sat), var(--lig), .1)
+    );
+    border-radius: 10rem 10rem 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-img{
+    width: 200px;
+}
+
+.home-scroll{
+    position: absolute;
+}
+
+.home-scroll{
+    color: var(--first-color);
+    right: -1.5rem;
+    bottom: 4rem;
+    display: grid;
+    row-gap: 2.25rem;
+    justify-items: center;
+}
+
+.home-scroll-icon{
+    font-size: 1.3rem;
+    margin-bottom: .75rem;
+}
+
+.home-scroll-name{
+    font-size: var(--smaller-font-size);
+    transform: rotate(-90deg);
+}
+
+
