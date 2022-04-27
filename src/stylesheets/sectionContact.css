@@ -1,0 +1,38 @@
+@import url('../index.css');
+
+.contact-container{
+    row-gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contact-info{
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-card{
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .75rem;
+    text-align: center;
+}
+
+.contact-card-icon{
+    font-size: 3rem;
+    color: var(--tittle-color);
+    margin-bottom: .25rem;
+}
+
+.contact-card-title,
+.contact-card-data{
+    font-size: var(--normal-font-size);
+}
+
+.contact-card-title{
+    font-weight: var(--font-medium);
+}
+
+.contact-card-data{
+    display: block;
+    margin-bottom: 1.2rem;
+}
