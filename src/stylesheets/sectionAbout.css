@@ -1,0 +1,51 @@
+@import url('../index.css');
+
+.about-container{
+    row-gap: 2.5rem;
+}
+
+.about-img{
+    width: 220px;
+    border-radius: 5rem;
+    background: linear-gradient(190deg,
+                hsla(var(--first-hue), var(--sat), var(--lig), .3),
+                hsla(var(--first-hue), var(--sat), var(--lig), .1)
+    );
+    justify-self: center;
+}
+
+.about-data{
+    text-align: center;
+}
+
+.about-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+    margin-bottom: 2rem;
+}
+
+.about-box{
+    background-color: var(--container-color);
+    border-radius: .75rem;
+    padding: .75rem .75rem;
+    overflow: hidden;
+}
+
+.about-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-bottom: .2rem;
+}
+
+.about-title{
+    font-size: var(--h3-font-size);
+}
+
+.about-subtitle{
+    font-size: var(--tiny-font-size);
+}
+
+.about-description{
+    margin-bottom: 2rem;
+}
