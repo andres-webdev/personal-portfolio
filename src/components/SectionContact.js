@@ -23,7 +23,7 @@ function SectionContact(){
 
                             <h3 className='contact-card-title'>Mail</h3>
 
-                            <span className='contact-card-data'>andresmftech5@gmail.com</span>
+                            <span className='contact-card-data'>andres@andresfrotenddev.com</span>
                         </div>
                     </div>
                 </div>
