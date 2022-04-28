@@ -38,11 +38,19 @@ function SectionHome(){
                         <img src={profil} alt="Foto-Profil" className="home-img" />
                 </div>
 
-                <a href="#about" className="home-scroll" data-aos='fade-right'>
+                <div className="home-resume">
+                    <p className="home-description" data-aos='fade-left' data-aos-delay='450'>
+                            I'm a Front end Software Developer using React.js Framework to build client-side Software improving UI and UX.  
+                    </p>
+
+                    <a href="#contact" className="button" data-aos='fade-in' data-aos-delay='800'>Contact</a>
+                </div>
+            </div>
+
+            <a href="#projects" className="home-scroll" data-aos='fade-right'>
                     <BiMouse className="home-scroll-icon" />
                     <span className="home-scroll-name">Scroll down</span>
-                </a>
-            </div>
+            </a>
         </section>
     );
 }

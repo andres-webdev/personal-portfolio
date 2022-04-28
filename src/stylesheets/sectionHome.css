@@ -12,7 +12,7 @@
 
 .home-greeting,
 .home-education{
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -42,7 +42,6 @@
     padding: .25rem;
     display: flex;
     font-size: 2.7rem;
-    transition: .3s;
 }
 
 .home-social-link:hover{
@@ -74,8 +73,8 @@
 
 .home-scroll{
     color: var(--first-color);
-    right: -1.5rem;
-    bottom: 4rem;
+    right: 0;
+    top: 27rem;
     display: grid;
     row-gap: 2.25rem;
     justify-items: center;
@@ -91,4 +90,18 @@
     transform: rotate(-90deg);
 }
 
+.home-resume{
+    text-align: center;
+}
+
+.home-description{
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .home-container{
+        padding-top: 1rem;
+    }
+}
 
