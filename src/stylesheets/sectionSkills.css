@@ -3,13 +3,15 @@
 .skills-container{
     row-gap: 2rem;
     padding-top: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .skills-content{
     background-color: var(--container-color);
     padding: 1.5rem;
     border-radius: 1.25rem;
+    width: 400px;
+    margin: 0 auto;
 }
 
 .skills-title{
@@ -45,6 +47,13 @@
 .skills-block2{
     margin-left: .3rem;
     width: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-block3{
+    display: flex;
+    flex-direction: column;
 }
 
 .skills-name{
@@ -54,7 +63,7 @@
 
 .skills-level{
     font-size: var(--tiny-font-size);
-    text-align: center;
+    text-align: left;
 }
 
 .skills-bs-check{
@@ -67,19 +76,19 @@
     margin-right: .4rem;
 }
 
-.skills-data2{
-    display: flex;
-    column-gap: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-
 /*----- Media Movil -------*/
 
 @media screen and (max-width: 500px){
     .skills-container{
         row-gap: 2rem;
         padding-top: 1rem;
-        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills-content{
+        background-color: var(--container-color);
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+        width: 335px;
+        margin: 0 auto;
     }
 }
