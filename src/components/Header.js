@@ -1,8 +1,7 @@
 import React from 'react';
 import '../stylesheets/Header.css';
-import { BiHomeAlt } from "react-icons/bi";
-import { FaRegMoon, FaBook, FaUser, FaRegFileCode, FaSuitcase } from "react-icons/fa";
-import { BsFillSunFill } from 'react-icons/bs';
+import { FaRegMoon, FaBook, FaUser, FaSuitcase } from "react-icons/fa";
+import { BsFillSunFill, BsFillFileEarmarkCodeFill } from 'react-icons/bs';
 
 /**
  * This header contains the menu to diversals sections of the
@@ -37,7 +36,6 @@ class Header extends React.Component{
   handleClick = (event) => {
 
     this.setState({ link: event });
-    console.log(this.state.link);
     
   }
 
@@ -52,20 +50,14 @@ class Header extends React.Component{
             <ul className='nav-list'>
               <li>
                 <a href='#home' onClick={() => this.handleClick('home')} className={`nav-link ${this.state.link === 'home' ? 'active-link' : ''}`}>
-                  <BiHomeAlt />
-                  <span className='nav-link-name'>Home</span>
-                </a>
-              </li>
-              <li>
-                <a href='#about' onClick={() => this.handleClick('about')} className={`nav-link ${this.state.link === 'about' ? 'active-link' : ''}`}>
                   <FaUser />
                   <span className='nav-link-name'>About</span>
                 </a>
               </li>
               <li>
-                <a href='#experience' onClick={() => this.handleClick('exp')} className={`nav-link ${this.state.link === 'exp' ? 'active-link' : ''}`}>
-                  <FaSuitcase />
-                  <span className='nav-link-name'>Experience</span>
+                <a href='#projects' onClick={() => this.handleClick('pro')} className={`nav-link ${this.state.link === 'pro' ? 'active-link' : ''}`}>
+                  <BsFillFileEarmarkCodeFill />
+                  <span className='nav-link-name'>Projects</span>
                 </a>
               </li>
               <li>
@@ -75,9 +67,9 @@ class Header extends React.Component{
                 </a>
               </li>
               <li>
-                <a href='#projects' onClick={() => this.handleClick('pro')} className={`nav-link ${this.state.link === 'pro' ? 'active-link' : ''}`}>
-                  <FaRegFileCode />
-                  <span className='nav-link-name'>Projects</span>
+                <a href='#experience' onClick={() => this.handleClick('exp')} className={`nav-link ${this.state.link === 'exp' ? 'active-link' : ''}`}>
+                  <FaSuitcase />
+                  <span className='nav-link-name'>Experience</span>
                 </a>
               </li>
             </ul>
