@@ -5,11 +5,6 @@
     padding-bottom: 3rem;
 }
 
-.contact-info{
-    display: grid;
-    gap: 1rem;
-}
-
 .contact-card{
     background-color: var(--container-color);
     padding: 1.5rem;
@@ -33,6 +28,5 @@
 }
 
 .contact-card-data{
-    display: block;
     margin-bottom: 1.2rem;
 }

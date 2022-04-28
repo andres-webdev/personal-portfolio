@@ -17,14 +17,12 @@ function SectionContact(){
 
             <div className='contact-container container grid' data-aos='zoom-in' data-aos-delay='500'>
                 <div className='contact-content'>
-                    <div className='contact-info'>
-                        <div className='contact-card'>
-                            <MdAttachEmail className='contact-card-icon' />
+                    <div className='contact-card'>
+                        <MdAttachEmail className='contact-card-icon' />
 
-                            <h3 className='contact-card-title'>Mail</h3>
+                        <h3 className='contact-card-title'>Mail</h3>
 
-                            <span className='contact-card-data'>andres@andresfrotenddev.com</span>
-                        </div>
+                        <span className='contact-card-data'>andresdmf55@gmail.com</span>
                     </div>
                 </div>
             </div>
