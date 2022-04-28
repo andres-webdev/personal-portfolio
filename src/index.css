@@ -71,7 +71,7 @@ code {
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
-  --link-color-hover: rgb(238, 228, 228);
+  --link-color-hover: rgb(219, 209, 209);
 
   /*---------- Fuentes y tipografias ----------*/
 
@@ -82,8 +82,8 @@ code {
   --h3-font-size: 1.3rem;
   --normal-font-size: 1.15rem;
   --small-font-size: 1rem;
-  --smaller-font-size: .9rem;
-  --tiny-font-size: .77rem;
+  --smaller-font-size: .95rem;
+  --tiny-font-size: .6rem;
 
   /*------------ Font Weight ---------------*/
 
@@ -97,20 +97,21 @@ code {
 
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 800px){
   :root{
     --biggest-font-size: 2.7rem;
     --h2-font-size: 2.2rem;
     --small-font-size: 1.5rem;
-    --smaller-font-size: 1.2rem;
+    --smaller-font-size: 1rem;
     --tiny-font-size: .8rem;
+    --normal-font-size: 1.2rem;
   }
 }
 
 /*---- Reusable Classes between components -----*/
 
 .container{
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
@@ -155,7 +156,6 @@ code {
   padding: .75rem 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
-  transition: .4s;
 }
 
 .button:hover{

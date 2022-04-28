@@ -10,7 +10,7 @@ function Footer(){
 
                 <ul className='footer-list'>
                     <li>
-                        <a href='#about' className='footer-link'>About</a>
+                        <a href='#home' className='footer-link'>About</a>
                     </li>
                     <li>
                         <a href='#experience' className='footer-link'>Experience</a>
