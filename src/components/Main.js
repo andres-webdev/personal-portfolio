@@ -1,5 +1,4 @@
 import React from "react";
-import SectionAbout from "./SectionAbout";
 import SectionContact from "./SectionContact";
 import SectionExperience from "./SectionExperience";
 import SectionHome from "./SectionHome";
@@ -14,10 +13,9 @@ function Main(){
     return(
         <main className="main">
             <SectionHome />
-            <SectionAbout />
-            <SectionExperience />
-            <SectionSkills />
             <SectionWork />
+            <SectionSkills />
+            <SectionExperience />
             <SectionContact />
         </main>
     );
