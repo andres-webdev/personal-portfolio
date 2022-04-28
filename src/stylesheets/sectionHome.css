@@ -74,7 +74,7 @@
 .home-scroll{
     color: var(--first-color);
     right: 0;
-    top: 27rem;
+    top: 25.5rem;
     display: grid;
     row-gap: 2.25rem;
     justify-items: center;
@@ -101,7 +101,8 @@
 
 @media screen and (max-width: 500px){
     .home-container{
-        padding-top: 1rem;
+        padding-top: .4rem;
+        row-gap: 1.8rem;
     }
 }
 

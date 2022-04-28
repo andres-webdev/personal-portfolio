@@ -83,7 +83,7 @@ code {
   --normal-font-size: 1.15rem;
   --small-font-size: 1rem;
   --smaller-font-size: .95rem;
-  --tiny-font-size: .6rem;
+  --tiny-font-size: .72rem;
 
   /*------------ Font Weight ---------------*/
 
@@ -103,7 +103,7 @@ code {
     --h2-font-size: 2.2rem;
     --small-font-size: 1.5rem;
     --smaller-font-size: 1rem;
-    --tiny-font-size: .8rem;
+    --tiny-font-size: .82rem;
     --normal-font-size: 1.2rem;
   }
 }

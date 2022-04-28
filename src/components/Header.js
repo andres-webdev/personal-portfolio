@@ -44,7 +44,7 @@ class Header extends React.Component{
     return (
       <header className='header' id='header'>
         <nav className='nav'>
-          <a href='#' className='nav-logo'>Andrés</a>
+          <a href='#top' className='nav-logo'>Andrés</a>
 
           <div className='nav-menu'>
             <ul className='nav-list'>

@@ -48,7 +48,7 @@ function SectionWork(){
                     {
                         items.map((elem) => {
                         
-                            const { id, title, img, alt, link, category } = elem;
+                            const { id, title, img, alt, link } = elem;
 
                             return(
 
