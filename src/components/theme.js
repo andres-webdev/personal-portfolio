@@ -12,7 +12,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const darkTheme = {
     /**
-     * We can add some styles in future, but now Its not necesary
+     * We can add some styles in future, but now Its not necesary because 
+     * 
+     * By default the app is set in dark mode (index.css)
      */
 }
 
