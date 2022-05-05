@@ -26,6 +26,10 @@
     border-radius: 1rem;
 }
 
+.work-card-item{
+    cursor: pointer;
+}
+
 .work-img{
     border-radius: 1rem;
     margin-bottom: .75rem;
@@ -44,6 +48,7 @@
     display: flex;
     align-items: center;
     column-gap: .25rem;
+    cursor: pointer;
 }
 
 .work-button:hover .work-icon{
@@ -60,10 +65,139 @@
     color: var(--body-color);
 }
 
-/*------ Media Movil ------*/
+/**--------- Modal EXP -------**/
+
+.work-modal{
+    position: fixed;
+    inset: 0;
+    background-color: hsla(var(--second-hue), 28%, 16%, .7);
+    visibility: hidden;
+    opacity: 0;
+    display: grid;
+    place-items: center;
+    transition: .4s;
+    z-index: var(--z-modal);
+}
+
+.work-modal-content{
+    position: relative;
+    background-color: var(--body-color);
+    padding: 2rem 2.7rem;
+    border-radius: 1.5rem;
+    /*Responsive*/
+    width: 65vw;
+    min-height: 80vh;
+}
+
+.work-modal-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.work-modal-title,
+.work-modal-links,
+.work-modal-description{
+    text-align: center;
+}
+
+.work-modal-title{
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: .6rem;
+}
+
+.work-modal-description{
+    font-size: var(--smaller-font-size);
+    margin-bottom: 1.8rem;
+    text-align: left;
+}
+
+.work-modal-title2{
+    font-size: var(--normal-font-size);
+    margin-bottom: .8rem;
+}
+
+.work-modal-list{
+    margin-bottom: 1rem;
+}
+
+.work-modal-item{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    padding-bottom: .4rem;
+    margin-bottom: .8rem;
+}
+
+.work-modal-icon{
+    font-size: 1.3rem;
+    color: var(--first-color);
+}
+
+.work-modal-link-icon{
+    font-size: 2.5rem;
+    color: var(--first-color);
+}
+
+.work-modal-info{
+    font-size: var(--tiny-font-size);
+    max-width: 770px;
+}
+
+.work-modal-footer{
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/*------------- Active Modal---------*/
+
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----  Media Movil Responsive -----*/
 
 @media screen and (max-width: 500px){
+
+    .work-modal-content{
+        margin: auto 1rem;
+    }
+
     .work-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .work-modal-content{
+        padding: 1.2rem 1.7rem;
+        width: 92vw;
+        min-height: 60vh;
+    }
+
+    .work-modal-info{
+        max-width: 270px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+
+    .work-modal-content{
+        margin: auto 1rem;
+    }
+
+    .work-modal-content{
+        padding: 1.2rem 2rem;
+        width: 70vw;
+        min-height: 60vh;
+    }
+
+    .work-modal-info{
+        max-width: 500px;
     }
 }
