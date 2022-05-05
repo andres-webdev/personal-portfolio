@@ -1,7 +1,7 @@
 import React from 'react';
 import '../stylesheets/Header.css';
-import { FaRegMoon, FaBook, FaUser, FaSuitcase } from "react-icons/fa";
-import { BsFillSunFill, BsFillFileEarmarkCodeFill } from 'react-icons/bs';
+import { FaRegMoon} from "react-icons/fa";
+import { BsFillSunFill } from 'react-icons/bs';
 
 /**
  * This header contains the menu to diversals sections of the
@@ -48,37 +48,31 @@ class Header extends React.Component{
 
           <div className='nav-menu'>
             <ul className='nav-list'>
-              <li>
+              <li key='home'>
                 <a href='#home' onClick={() => this.handleClick('home')} className={`nav-link ${this.state.link === 'home' ? 'active-link' : ''}`}>
-                  <FaUser />
                   <span className='nav-link-name'>About</span>
                 </a>
               </li>
-              <li>
+              <li key='projects'>
                 <a href='#projects' onClick={() => this.handleClick('pro')} className={`nav-link ${this.state.link === 'pro' ? 'active-link' : ''}`}>
-                  <BsFillFileEarmarkCodeFill />
                   <span className='nav-link-name'>Projects</span>
                 </a>
               </li>
-              <li>
+              <li key='skills'>
                 <a href='#skills' onClick={() => this.handleClick('skills')} className={`nav-link ${this.state.link === 'skills' ? 'active-link' : ''}`}>
-                  <FaBook />
                   <span className='nav-link-name'>Skills</span>
                 </a>
               </li>
-              <li>
+              <li key='exp'>
                 <a href='#experience' onClick={() => this.handleClick('exp')} className={`nav-link ${this.state.link === 'exp' ? 'active-link' : ''}`}>
-                  <FaSuitcase />
                   <span className='nav-link-name'>Experience</span>
                 </a>
               </li>
             </ul>
+          
+            <BsFillSunFill className={this.state.theme === true ? 'change-theme-hide' : 'change-theme'} onClick={this.handlerTheme} />
+            <FaRegMoon className={this.state.theme === false ? 'change-theme-hide' : 'change-theme'} onClick={this.handlerTheme} />
           </div>
-
-          <BsFillSunFill className={this.state.theme === true ? 'change-theme-hide' : 'change-theme'} onClick={this.handlerTheme} />
-          <FaRegMoon className={this.state.theme === false ? 'change-theme-hide' : 'change-theme'} onClick={this.handlerTheme} />
-
-
         </nav>
       </header>
     );

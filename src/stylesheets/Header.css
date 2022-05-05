@@ -16,8 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .nav-logo{
@@ -32,12 +32,13 @@
 }
 
 .nav-menu{
-  margin-left: -2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
 }
 
 .nav-list{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -46,18 +47,12 @@
   font-size: var(--small-font-size);
   padding-left: .6rem;
   padding-right: .6rem;
-  padding-bottom: .2rem;
+  padding-bottom: .6rem;
   margin-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .active-link{
-  font-size: 1.8rem;
-  background: none; 
   border-bottom: solid 3px var(--text-color);
-  border-radius: 0;
 }
 
 .nav-link.active-link:hover{
@@ -66,7 +61,7 @@
 }
 
 .nav-link-name{
-  font-size: var(--tiny-font-size);
+  font-size: var(--smaller-font-size);
   padding-top: .2rem;
 }
 
@@ -87,32 +82,13 @@
 /*----- Movil and Tablets ------*/
 
 @media screen and (max-width: 500px){
-  .nav-menu{
-    position: fixed;
-    bottom: .001rem;
-    background-color: var(--first-color);
-    width: 100%;
-    border-radius: 2.5rem 2.5rem 0 0;
-    padding: 1rem 1.25rem;
-    transition: .5s;
-  }
-
-  .nav-link{
-    color: var(--body-color);
-    font-size: 1.75rem;
-    border-radius: 1rem;
-    padding-bottom: .6rem;
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
-  }
-
-  .nav-link-name{
+  .nav-list{
     display: none;
   }
 
-  .active-link{
-    border-bottom: solid 3px var(--body-color);
-    border-radius: 0;
+  .nav{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
