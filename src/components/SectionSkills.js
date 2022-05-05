@@ -12,21 +12,21 @@ import 'aos/dist/aos.css';
 function SectionSkills(){
 
     useEffect(() => {
-        AOS.init({ duration: 1800, delay: 500, easing: "ease", once: false });
+        AOS.init({ duration: 1000, easing: "ease", once: false });
     }, []);
 
     return(
         <section className="skills section" id="skills">
-            <span className="section-subtitle" data-aos='fade-in'>Certificates</span>
+            <span className="section-subtitle">Certificates</span>
             <h2 className="section-title" data-aos='fade-in'>Skills</h2>
 
             <div className="skills-container container grid">
-                <div className="skills-content" data-aos='zoom-in' data-aos-delay='400'>
+                <div className="skills-content">
                     <h3 className="skills-title">Lenguages and Framework</h3>
                 
                     <div className="skills-box">
                         <div className="skills-group">
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='800'>
+                            <div className="skills-data">
                                 <FaReact className="skills-icons" />
                                 <div className="skills-block2">
                                     <h3 className="skills-name">React.Js</h3>
@@ -38,7 +38,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1000'>
+                            <div className="skills-data">
                                 <SiJavascript className="skills-icons" />
                                 <div className="skills-block2">
                                     <h3 className="skills-name">JavaScript</h3>
@@ -51,7 +51,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1200'>
+                            <div className="skills-data">
                                 <IoLogoCss3 className="skills-icons" />
                                 <div className="skills-block2">
                                     <h3 className="skills-name">CSS</h3>
@@ -64,7 +64,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1400'>
+                            <div className="skills-data">
                                 <IoLogoHtml5 className="skills-icons" />
                                 <div className="skills-block2">
                                     <h3 className="skills-name">HTML</h3>
@@ -78,7 +78,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1600'>
+                            <div className="skills-data">
                                 <BsGithub className="skills-icons" />
                                 <div className="skills-block2">
                                     <h3 className="skills-name">GitHub</h3>
@@ -90,7 +90,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1800'>
+                            <div className="skills-data">
                                 <FaGitAlt className="skills-icons" />
                                 <div className="skills-block2">
                                     <h3 className="skills-name">GIT</h3>
@@ -105,12 +105,12 @@ function SectionSkills(){
                     </div>
                 </div>
 
-                <div className="skills-content" data-aos='zoom-in' data-aos-delay='200'>
+                <div className="skills-content">
                     <h3 className="skills-title">Certificates</h3>
                 
                     <div className="skills-box">
                         <div className="skills-group">
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1600'>
+                            <div className="skills-data">
                                 <MdOutlineMenuBook className="skills-icons" />
                                 <div className="skills-block3">
                                     <span className="skills-level">Course</span>
@@ -119,7 +119,7 @@ function SectionSkills(){
                                 </div>
                             </div>
                             
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1200'>
+                            <div className="skills-data">
                                 <MdOutlineMenuBook className="skills-icons" />
                                 <div className="skills-block3">
                                     <span className="skills-level">Course</span>
@@ -128,7 +128,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1000'>
+                            <div className="skills-data">
                                 <MdOutlineMenuBook className="skills-icons" />
                                 <div className="skills-block3">
                                     <span className="skills-level">Course</span>
@@ -137,7 +137,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='800'>
+                            <div className="skills-data">
                                 <MdOutlineMenuBook className="skills-icons" />
                                 <div className="skills-block3">
                                     <span className="skills-level">Course</span>
@@ -146,7 +146,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1400'>
+                            <div className="skills-data">
                                 <MdOutlineMenuBook className="skills-icons" />
                                 <div className="skills-block3">
                                     <span className="skills-level">Course</span>
@@ -155,7 +155,7 @@ function SectionSkills(){
                                 </div>
                             </div>
 
-                            <div className="skills-data" data-aos='fade-in' data-aos-delay='1800'>
+                            <div className="skills-data">
                                 <RiBookMarkFill className="skills-icons" />
                                 <div className="skills-block3">
                                     <span className="skills-level">Diploma</span>
