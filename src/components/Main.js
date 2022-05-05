@@ -1,6 +1,4 @@
 import React from "react";
-import SectionContact from "./SectionContact";
-import SectionExperience from "./SectionExperience";
 import SectionHome from "./SectionHome";
 import SectionSkills from "./SectionSkills";
 import SectionWork from "./SectionWorks";
@@ -15,8 +13,6 @@ function Main(){
             <SectionHome />
             <SectionWork />
             <SectionSkills />
-            <SectionExperience />
-            <SectionContact />
         </main>
     );
 }
