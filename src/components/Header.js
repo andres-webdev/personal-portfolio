@@ -63,11 +63,11 @@ class Header extends React.Component{
                   <span className='nav-link-name'>Skills</span>
                 </a>
               </li>
-              <li key='exp'>
+              {/* <li key='exp'>
                 <a href='#experience' onClick={() => this.handleClick('exp')} className={`nav-link ${this.state.link === 'exp' ? 'active-link' : ''}`}>
                   <span className='nav-link-name'>Experience</span>
                 </a>
-              </li>
+              </li> */}
             </ul>
           
             <BsFillSunFill className={this.state.theme === true ? 'change-theme-hide' : 'change-theme'} onClick={this.handlerTheme} />
