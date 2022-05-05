@@ -80,10 +80,10 @@ code {
   --h1-font-size: 1.8rem;
   --h2-font-size: 1.6rem;
   --h3-font-size: 1.3rem;
-  --normal-font-size: 1.15rem;
+  --normal-font-size: 1.1rem;
   --small-font-size: 1rem;
-  --smaller-font-size: .95rem;
-  --tiny-font-size: .72rem;
+  --smaller-font-size: .9rem;
+  --tiny-font-size: .8rem;
 
   /*------------ Font Weight ---------------*/
 
@@ -99,11 +99,10 @@ code {
 
 @media screen and (min-width: 800px){
   :root{
-    --biggest-font-size: 2.7rem;
-    --h2-font-size: 2.2rem;
+    --biggest-font-size: 3rem;
     --small-font-size: 1.5rem;
     --smaller-font-size: 1rem;
-    --tiny-font-size: .82rem;
+    --tiny-font-size: .9rem;
     --normal-font-size: 1.2rem;
   }
 }
