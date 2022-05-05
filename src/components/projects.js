@@ -11,11 +11,11 @@ const projects = [
         link: 'https://andres-webdev.github.io/binance-api/',
         category: 'web',
         description: `This app shows a list of cryptocurrencies pairs(USDT) from Binance platform 
-        with its actual price market. Every crypto has to be higher than 1 USDT. Updating every 5 seconds.`,
+        with its actual market price. Every crypto has to be higher than 1 USDT. Updating every 5 seconds.`,
         linkGithub: 'https://github.com/andres-webdev/wikipedia-search-api',
-        goal1: `I created a axios instance that willing me to use the corresponding endpoint, then I used the
-        get method to request data and a response, using promises, async and await inside a useEffect hook.`,
-        goal2: `I created a state Hook to store data from the api and another for handle conection errors.`,
+        goal1: `I created an axios instance willing me to use the corresponding endpoint, then I used the
+        get method to request data and get a response, using promises, async and await inside a useEffect Hook.`,
+        goal2: `I created a state Hook to store data from the api and another Hook for handle conection errors.`,
         goal3: `After that, I sorted data from highest to lowest price, with a sort method. Then I called each
         element of the array, with a map method, mounting a component with its props`,
         goal4: `These components evaluate each element with pair UDST and higher than 1 USDT 
@@ -29,16 +29,16 @@ const projects = [
         link: 'https://andres-webdev.github.io/simple-form/',
         category: 'movil',
         description: `This app shows a form with 4 input fields.It evaluates each input field, if all are correct 
-        It shows a green border in other case are red with a corresponding issue message. Finally, It shows an 
-        alert message with all you data sumitted.`,
+        it shows a green border in other cases are red with a corresponding issue message. Finally, it shows an 
+        alert message with all you data submitted.`,
         linkGithub: 'https://github.com/andres-webdev/simple-form',
-        goal1: `We have 5 class components(form, username, email, password y confirm password) and a functional 
+        goal1: `I created 5 class components(form, username, email, password y confirm password) and a functional 
         component(showmsg). The form component validates and shows the result because inside of it are the 
-        others components and share their props.`,
-        goal2: `Each component have 3 states(input, msgError y color). When you input the corresponding value, 
+        other components and share their props.`,
+        goal2: `Each component has 3 states(input, msgError y color). When you input the corresponding value, 
         500ms later it validates and evaluates that input value.`,
         goal3: `If there an error the state msgError and color change, and the showmsg component shows that 
-        message below the input field but If there is not message of error showmsg doesn't show anything`,
+        message below the input field but if there is not message of error showmsg doesn't show anything`,
         goal4: `I used arrow functions, ternary operators, regular expresions, validations and render props to 
         share value props between components.` 
     },
