@@ -13,10 +13,10 @@ function Footer(){
                         <a href='#home' className='footer-link'>About</a>
                     </li>
                     <li>
-                        <a href='#experience' className='footer-link'>Experience</a>
+                        <a href='#projects' className='footer-link'>Projects</a>
                     </li>
                     <li>
-                        <a href='#projects' className='footer-link'>Projects</a>
+                        <a href='#skills' className='footer-link'>Skills</a>
                     </li>
                 </ul>
 
