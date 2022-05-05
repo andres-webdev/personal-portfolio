@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import '../stylesheets/sectionHome.css';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { BiMouse } from 'react-icons/bi';
+import TypeWriterEffect from 'react-typewriter-effect';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -14,40 +15,52 @@ const profil = './img/profil1.png';
 function SectionHome(){
 
     useEffect(() => {
-        AOS.init({ duration: 1800, delay: 500, easing: "ease", once: false });
+        AOS.init({ duration: 1000, easing: "ease", once: false });
     }, []);
 
     return(
         <section className="home section" id="home">
             <div className="home-container container grid">
                 <div className="home-data">
-                    <span className="home-greeting" data-aos='fade-in'>Hello! I'm</span>
-                    <h1 className="home-name" data-aos='zoom-in' data-aos-delay='800'>Andrés Márquez</h1>
-                    <h3 className="home-education" data-aos='fade-in' data-aos-delay='1500'>Front end Developer</h3>
+                    <span className="home-greeting">Hello! I'm</span>
+                    <h1 className="home-name" data-aos='fade-in'>Andrés Márquez</h1>
 
-                    <div className="home-social">
-                        <a href="https://www.linkedin.com/in/andres-marquez-747723215" target="_blank" rel="noreferrer" className="home-social-link" data-aos='fade-in' data-aos-delay='1800'>
-                            <BsLinkedin />
-                        </a>
-                        <a href="https://github.com/andres-webdev" target="_blank" rel="noreferrer" className="home-social-link" data-aos='fade-in' data-aos-delay='2000'>
-                            <BsGithub /> 
-                        </a>
-                    </div>          
+                    <TypeWriterEffect 
+                        textStyle={{
+                            color: 'var(--first-color)',
+                            fontSize: 'var(--small-font-size)',
+                            textAlign: 'center',
+                        }}
+                        startDelay={600}
+                        multiText={["Front end Developer","React Developer","UX / UI Developer"]}
+                        multiTexDelay={1000}
+                        typeSpeed={135}
+                        cursorColor='#3F3D56'
+                        multiTextLoop
+                         />         
                 </div>
-                <div className="home-handle" data-aos='fade-up' data-aos-delay='2300'>
+                
+                <div className="home-handle">
                         <img src={profil} alt="Foto-Profil" className="home-img" />
                 </div>
 
-                <div className="home-resume">
-                    <p className="home-description" data-aos='fade-left' data-aos-delay='450'>
+                <div className="home-resume" data-aos='fade-in'>
+                    <p className="home-description">
                             I'm a Front end Software Developer using React.js Framework to build client-side Software improving UI and UX.  
                     </p>
 
-                    <a href="#contact" className="button" data-aos='fade-in' data-aos-delay='800'>Contact</a>
+                    <div className="home-social">
+                        <a href="https://www.linkedin.com/in/andres-marquez-747723215" target="_blank" rel="noreferrer" className="home-social-link" data-aos='fade-in'>
+                            <BsLinkedin />
+                        </a>
+                        <a href="https://github.com/andres-webdev" target="_blank" rel="noreferrer" className="home-social-link" data-aos='fade-in'>
+                            <BsGithub /> 
+                        </a>
+                    </div> 
                 </div>
             </div>
 
-            <a href="#projects" className="home-scroll" data-aos='fade-right'>
+            <a href="#projects" className="home-scroll">
                     <BiMouse className="home-scroll-icon" />
                     <span className="home-scroll-name">Scroll down</span>
             </a>

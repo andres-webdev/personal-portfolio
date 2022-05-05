@@ -2,16 +2,16 @@
 
 .home-container{
     position: relative;
-    row-gap: 2.5rem;
-    padding-top: 2rem;
+    row-gap: 3rem;
+    padding-top: 3.5rem;
 }
 
 .home-data{
     text-align: center;
+    margin-bottom: 1.3rem;
 }
 
-.home-greeting,
-.home-education{
+.home-greeting{
     font-size: var(--smaller-font-size);
     font-weight: var(--font-medium);
 }
@@ -20,11 +20,6 @@
     display: block;
     color: var(--tittle-color);
     margin-bottom: .25rem;
-}
-
-.home-education{
-    color: var(--text-color);
-    margin-bottom: 1.6rem;
 }
 
 .home-name{
@@ -67,42 +62,52 @@
     width: 200px;
 }
 
-.home-scroll{
-    position: absolute;
-}
-
-.home-scroll{
-    color: var(--first-color);
-    right: 0;
-    top: 25.5rem;
-    display: grid;
-    row-gap: 2.25rem;
-    justify-items: center;
-}
-
-.home-scroll-icon{
-    font-size: 1.3rem;
-    margin-bottom: .75rem;
-}
-
-.home-scroll-name{
-    font-size: var(--smaller-font-size);
-    transform: rotate(-90deg);
-}
-
 .home-resume{
     text-align: center;
 }
 
 .home-description{
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 
 @media screen and (max-width: 500px){
     .home-container{
-        padding-top: .4rem;
-        row-gap: 1.8rem;
+        padding-top: 1rem;
+        row-gap: 2rem;
+    }
+
+    .home-scroll{
+        position: absolute;
+    }
+    
+    .home-scroll{
+        color: var(--first-color);
+        right: 0;
+        top: 23rem;
+        display: grid;
+        row-gap: 2.25rem;
+        justify-items: center;
+    }
+    
+    .home-scroll-icon{
+        font-size: 1.3rem;
+        margin-bottom: .75rem;
+    }
+    
+    .home-scroll-name{
+        font-size: var(--smaller-font-size);
+        transform: rotate(-90deg);
     }
 }
+
+@media screen and (min-width: 600px){
+    .home-scroll{
+        display: none;
+    }
+}
+
+
+
+
 
