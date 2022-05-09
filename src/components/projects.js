@@ -11,15 +11,18 @@ const projects = [
         link: 'https://andres-webdev.github.io/binance-api/',
         category: 'web',
         description: `This app shows a list of cryptocurrencies pairs(USDT) from Binance platform 
-        with its actual market price. Every crypto has to be higher than 1 USDT. Updating every 5 seconds.`,
-        linkGithub: 'https://github.com/andres-webdev/wikipedia-search-api',
-        goal1: `I created an axios instance willing me to use the corresponding endpoint, then I used the
-        get method to request data and get a response, using promises, async and await inside a useEffect Hook.`,
-        goal2: `I created a state Hook to store data from the api and another Hook for handle conection errors.`,
-        goal3: `After that, I sorted data from highest to lowest price, with a sort method. Then I called each
-        element of the array, with a map method, mounting a component with its props`,
-        goal4: `These components evaluate each element with pair UDST and higher than 1 USDT 
-        to represent a row in the list and show the result.`
+        with its actual market price. When It does the request to the Binance API, updating every 5 seconds, it sorts 
+        data from highest to lowest price, with a sort method. Besides, It calls each element of the array, with
+        a map method, mounting every component with its props. Then, It evaluates, with RegExp, every component with
+        pair USDT and higher than 1 USDT, to represent a row in the list and show the result.`,
+        linkGithub: 'https://github.com/andres-webdev/binance-api',
+        goals: [
+            `Node.js and NPM for JavaScript runtime environment and package management.`,
+            `React.js as a Front-End library to build interactive user interfaces. I used state Hooks to store data
+            from the api and handle conection errors.`,
+            `Axios library to handle asynchronous RESTAPI requests using useEffect Hook.`,
+            `CSS3 for styling and HTML5 for the layout.`
+        ]
     },
     {
         id: 2,
@@ -28,19 +31,17 @@ const projects = [
         alt: 'form',
         link: 'https://andres-webdev.github.io/simple-form/',
         category: 'movil',
-        description: `This app shows a form with 4 input fields.It evaluates each input field, if all are correct 
+        description: `This app shows a form with 4 input fields. It evaluates each input field, if all are correct 
         it shows a green border in other cases are red with a corresponding issue message. Finally, it shows an 
-        alert message with all you data submitted.`,
+        alert message with all you data submitted. I used arrow functions, ternary operators, RegExp, validations
+        and render props to share and validate value props between components.`,
         linkGithub: 'https://github.com/andres-webdev/simple-form',
-        goal1: `I created 5 class components(form, username, email, password y confirm password) and a functional 
-        component(showmsg). The form component validates and shows the result because inside of it are the 
-        other components and share their props.`,
-        goal2: `Each component has 3 states(input, msgError y color). When you input the corresponding value, 
-        500ms later it validates and evaluates that input value.`,
-        goal3: `If there an error the state msgError and color change, and the showmsg component shows that 
-        message below the input field but if there is not message of error showmsg doesn't show anything`,
-        goal4: `I used arrow functions, ternary operators, regular expresions, validations and render props to 
-        share value props between components.` 
+        goals: [
+            `Node.js and NPM for JavaScript runtime environment and package management.`,
+            `React.js as a Front-End library to build interactive user interfaces. I created state Hooks to store every
+            input typed by the user.`,
+            `CSS3 for styling and HTML5 for the layout.`
+        ]
     },
     {
         id: 3,
@@ -49,30 +50,37 @@ const projects = [
         alt: 'wikipedia',
         link: 'https://andres-webdev.github.io/wikipedia-search-api/',
         category: 'web',
-        description: 'This app shows a definition, from Wikipedia website, of every word get into searchbar.',
+        description: `This app shows a definition, from Wikipedia website of every word get into searchbar. 
+        When It does the request to Wikipedia API, and gets an array of objects. It calls each element of the 
+        array, with a map method, for mounting a component to show the list. I used render props that allow me
+        share props between components. I used arrow functions and RegExp to evaluate and sort every element 
+        of the list, showing a row in the list with a link and a snippet of the article.`,
         linkGithub: 'https://github.com/andres-webdev/wikipedia-search-api',
-        goal1: `To handle requests and responses I used Axios, that is a http client library, 
-        I created an instance with an endpoint from  api of wikipedia. For each time that you input 
-        a letter it callback a function where It use get method to request data by a promise 
-        with async and await`,
-        goal2: `Then the response of the request is storing in a state Hook`,
-        goal3: `After that, I called each element of the array, with a map method, mounting a component with its props`,
-        goal4: `These components show a title that contains a link to the article in wikipedia. Besides, It shows a snippet about the content requested` 
+        goals: [
+            `Node.js and NPM for JavaScript runtime environment and package management.`,
+            `React.js as a Front-End library to build interactive user interfaces. I used state Hooks to store data
+            from the api and handle conection errors.`,
+            `Axios library to handle asynchronous RESTAPI requests using useEffect Hook.`,
+            `CSS3 for styling and HTML5 for the layout.`
+        ]
     },
     {
         id: 4,
-        title: 'Counter Words',
+        title: 'Words Counter',
         img: 'img/clock.jpg',
         alt: 'words',
         link: 'https://andres-webdev.github.io/words-counter/',
         category: 'movil',
-        description: `This app counts every character and word input by user. And It shows the result in the section below`,
+        description: `This app counts every character and word input by user. And It shows the number of characters and 
+        words in the section below. I used render props that allow me share props between components. Also, I used 
+        arrow functions, ternary operators and RexExp.`,
         linkGithub: 'https://github.com/andres-webdev/words-counter',
-        goal1: `You input data into the textarea and these data are store in a state Hook.`,
-        goal2: `These data are passed to his parent component through his render props`,
-        goal3: `Then these data are passed to show component and evaluate every line break throught regular expressions 
-        to show the words of the string and every character below textarea`,
-        goal4: `I used render props, state Hooks, ternary operators and regular expresions.` 
+        goals: [
+            `Node.js and NPM for JavaScript runtime environment and package management.`,
+            `React.js as a Front-End library to build interactive user interfaces. I created state Hooks to store every
+            input typed by the user.`,
+            `CSS3 for styling and HTML5 for the layout.`
+        ]
     },
     {
         id: 5,
@@ -81,16 +89,18 @@ const projects = [
         alt: 'tasks',
         link: 'https://andres-webdev.github.io/tasks/',
         category: 'movil',
-        description: `This app allows you add, mark as completed and delete tasks inside a list.`,
+        description: `This app allows you add, mark as completed and delete tasks inside a list. It calls each 
+        element of the array, with a map method, for mounting a component to show the list. I used render props 
+        that allow me share props between components. Also, I used arrow functions, ternary operators and rest 
+        parameters syntax that allows a function to accept an indefinite number of arguments as an array.`,
         linkGithub: `https://github.com/andres-webdev/tasks`,
-        goal1: `There are 3 components. In form component you input the task adding in the list. I used a state Hook 
-        for store it. Also I used uuidv4 library for each task have an unique id.`,
-        goal2: `With main component(list) you add, deleted and mark as completed each task. To add a task, through form component, 
-        I stored the object task with the rest parameter into an array. Then I used map method to mount task component with his render props.`,
-        goal3: `To delete a task I used filter method to filter all elements that does not match with id, throught task component 
-        when is clicked the deleted icon. `,
-        goal4: `To mark a task as completed I evaluated each task with map method and change the props called "completada", 
-        through task component using render props.` 
+        goals: [
+            `Node.js and NPM for JavaScript runtime environment and package management.`,
+            `React.js as a Front-End library to build interactive user interfaces. I created state Hooks to store every
+            input typed by the user.`,
+            `Uuid library to generate unique ids for every element of the list.`,
+            `CSS3 for styling and HTML5 for the layout.`
+        ]
     },
 ];
 

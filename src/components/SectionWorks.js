@@ -58,7 +58,7 @@ function SectionWork(){
                     {
                         items.map((elem) => {
                         
-                            const { id, title, img, alt, link, description, linkGithub, goal1, goal2, goal3, goal4 } = elem;
+                            const { id, title, img, alt, link, description, linkGithub, goals } = elem;
 
                             return(
 
@@ -82,24 +82,18 @@ function SectionWork(){
 
                                             <ul className='work-modal-list'>
                                                 <li>
-                                                    <h3 className="work-modal-title2">App Performance</h3>
+                                                    <h3 className="work-modal-title2">Stack used for this project</h3>
                                                     <ul>
-                                                        <li className="work-modal-item">
-                                                            <BsPatchCheckFill className="work-modal-icon" />
-                                                            <p className="work-modal-info">{goal1}</p>
-                                                        </li>
-                                                        <li className="work-modal-item">
-                                                            <BsPatchCheckFill className="work-modal-icon" />
-                                                            <p className="work-modal-info">{goal2}</p>
-                                                        </li>
-                                                        <li className="work-modal-item">
-                                                            <BsPatchCheckFill className="work-modal-icon" />
-                                                            <p className="work-modal-info">{goal3}</p>
-                                                        </li>
-                                                        <li className="work-modal-item">
-                                                            <BsPatchCheckFill className="work-modal-icon" />
-                                                            <p className="work-modal-info">{goal4}</p>
-                                                        </li>
+                                                    {
+                                                        goals.map((x) => {
+                                                            return(
+                                                                <li className="work-modal-item" key={x.length}>
+                                                                    <BsPatchCheckFill className="work-modal-icon" />
+                                                                    <p className="work-modal-info">{x}</p>
+                                                                </li>
+                                                            );
+                                                        })
+                                                    }
                                                     </ul>
                                                 </li>
                                             </ul>

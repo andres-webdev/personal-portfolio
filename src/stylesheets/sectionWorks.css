@@ -77,6 +77,7 @@
     place-items: center;
     transition: .4s;
     z-index: var(--z-modal);
+    overflow-y: auto;
 }
 
 .work-modal-content{
@@ -107,6 +108,7 @@
 .work-modal-title{
     font-size: var(--h2-font-size);
     color: var(--first-color);
+    margin-top: 1rem;
     margin-bottom: .6rem;
 }
 
@@ -166,8 +168,9 @@
 
 @media screen and (max-width: 500px){
 
-    .work-modal-content{
-        margin: auto 1rem;
+    .work-modal{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 
     .work-container{
@@ -178,10 +181,11 @@
         padding: 1.2rem 1.7rem;
         width: 92vw;
         min-height: 60vh;
+        margin: auto 1rem;
     }
 
     .work-modal-info{
-        max-width: 270px;
+        max-width: 250px;
     }
 }
 
