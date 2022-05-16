@@ -46,7 +46,7 @@ function SectionHome(){
 
                 <div className="home-resume" data-aos='fade-in'>
                     <p className="home-description">
-                            I'm a Front end Software Developer using React.js Framework to build client-side Software improving UI and UX.  
+                        I'm a Front end Software Developer using React.js library to build client-side Software, user interfaces responsibly and improving UI and UX.                   
                     </p>
 
                     <div className="home-social">
